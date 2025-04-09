@@ -7,7 +7,12 @@ authors = ["Amirhossein Ghanipour d3v1ll3n@gmail.com"]
 license = "MIT"
 repository = "https://github.com/amirhosseinghanipour/presto"
 keywords = ["cli", "tui", "data-analysis", "preprocessing", "data-science"]
-categories = ["command-line-utilities", "data-processing"]
+categories = [
+  "command-line-utilities",
+  "rendering",
+  "parsing",
+  "command-line-interface",
+]
 
 [dependencies]
 rayon = "1.10"
