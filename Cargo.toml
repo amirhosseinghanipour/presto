@@ -6,17 +6,7 @@ description = "Presto accelerates preprocessing with precision."
 authors = ["Amirhossein Ghanipour d3v1ll3n@gmail.com"]
 license = "MIT"
 repository = "https://github.com/amirhosseinghanipour/presto"
-keywords = [
-  "cli",
-  "tui",
-  "data-analysis",
-  "rust",
-  "preprocessing",
-  "data-science",
-  "tabular",
-  "summary",
-  "data-frame",
-]
+keywords = ["cli", "tui", "data-analysis", "preprocessing", "data-science"]
 categories = ["command-line-utilities", "data-processing"]
 
 [dependencies]
