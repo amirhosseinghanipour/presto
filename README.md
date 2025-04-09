@@ -14,7 +14,7 @@ Presto is a Rust-based CLI tool for exploring and analyzing datasets through an 
 # Installation
 ## From crates.io
 ```bash
-cargo install presto
+cargo install presto-cli
 ```
 
 ## From GitHub Release
