@@ -1,5 +1,5 @@
 use clap::Parser;
-use presto::{Dataset, describe, render_tui};
+use presto_cli::{Dataset, describe, render_tui};
 use std::path::PathBuf;
 
 #[derive(Parser, Debug)]
@@ -9,10 +9,10 @@ struct Args {
     path: PathBuf,
 }
 
-fn main() -> Result<(), presto::PrestoError> {
+fn main() -> Result<(), presto_cli::PrestoError> {
     let args = Args::parse();
     let dataset = Dataset::from_csv(args.path.to_str().ok_or_else(|| {
-        presto::PrestoError::InvalidNumeric("Invalid path provided".to_string())
+        presto_cli::PrestoError::InvalidNumeric("Invalid path provided".to_string())
     })?)?;
     let description = describe(&dataset)?;
     render_tui(&dataset, &description)?;
